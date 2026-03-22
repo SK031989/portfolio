@@ -1,187 +1,859 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Sandeep Kumar | Senior Full Stack Developer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <style>
-        body {
-            scroll-behavior: smooth;
-        }
-        .hero {
-            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-            color: white;
-            padding: 120px 0;
-        }
-        .section-title {
-            font-weight: 700;
-            margin-bottom: 40px;
-            position: relative;
-        }
-        .section-title::after {
-            content: '';
-            width: 60px;
-            height: 3px;
-            background: #0d6efd;
-            display: block;
-            margin: 10px auto 0;
-        }
-        .experience-card {
-            border-left: 4px solid #0d6efd;
-        }
-        footer {
-            background: #111;
-            color: #ccc;
-            padding: 20px 0;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandeep Kumar — Senior Web & Software Developer</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Fraunces:ital,wght@0,300;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="#">Sandeep Kumar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
 
-<!-- Hero Section -->
-<section class="hero text-center">
-    <div class="container">
-        <h1 class="display-4 fw-bold">Senior Full Stack Developer</h1>
-        <p class="lead mt-3">
-            10+ Years of Experience in PHP, Laravel, Node.js & Python Development
-        </p>
-        <p class="mt-3">
-            Building scalable enterprise applications, APIs, and cloud-ready systems.
-        </p>
-        <a href="#contact" class="btn btn-primary btn-lg mt-3">Let's Work Together</a>
-    </div>
-</section>
+    <!-- NAV -->
+    <nav id="nav">
+        <div class="nav-logo">SK/</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-<!-- About -->
-<section id="about" class="py-5">
-    <div class="container text-center">
-        <h2 class="section-title">About Me</h2>
-        <p class="lead">
-            I am a results-driven Senior Full Stack Developer with over 10 years of experience 
-            delivering high-performance web applications. I specialize in backend architecture, 
-            scalable system design, REST APIs, and cloud deployment.
-        </p>
-        <p>
-            My expertise spans enterprise HRMS systems, SaaS platforms, automation tools, 
-            and API-driven architectures using Laravel, Node.js, and Python.
-        </p>
-    </div>
-</section>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero-grid"></div>
+        <div class="hero-orb orb1"></div>
+        <div class="hero-orb orb2"></div>
 
-<!-- Experience -->
-<section id="experience" class="bg-light py-5">
-    <div class="container">
-        <h2 class="section-title text-center">Professional Experience</h2>
+        <div class="hero-badge"><span></span> Available for new projects</div>
 
-        <div class="card shadow-sm mb-4 experience-card">
-            <div class="card-body">
-                <h5>Senior Software Engineer</h5>
-                <p class="text-muted">2018 – Present</p>
-                <ul>
-                    <li>Architected enterprise-level HRMS applications using Laravel.</li>
-                    <li>Built scalable REST APIs with Node.js and Express.</li>
-                    <li>Optimized database performance for high-traffic systems.</li>
-                    <li>Led team of developers and managed code reviews.</li>
-                </ul>
+        <div class="hero-profile-float">
+            <img src="https://media.licdn.com/dms/image/v2/D5603AQEvGvQZVV29cg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1706865496969?e=1775692800&v=beta&t=uA3o2OtCR9d9qvpH4n4JNY4Lu-M7Gmvp8gci-EyAxA8"
+                alt="Sandeep Kumar" />
+            <div class="hero-profile-info">
+                <span class="hero-profile-name">Sandeep Kumar</span>
+                <span class="hero-profile-title">Web & Software Developer</span>
             </div>
         </div>
 
-        <div class="card shadow-sm experience-card">
-            <div class="card-body">
-                <h5>Full Stack Developer</h5>
-                <p class="text-muted">2014 – 2018</p>
-                <ul>
-                    <li>Developed web applications using PHP and MySQL.</li>
-                    <li>Integrated third-party APIs and payment gateways.</li>
-                    <li>Created automation tools using Python.</li>
-                </ul>
-            </div>
-        </div>
+        <h1 class="hero-title">
+            <span class="line1">SANDEEP</span>
+            <span class="line2">KUMAR</span>
+            <span class="line3">DEV.</span>
+        </h1>
 
-    </div>
-</section>
-
-<!-- Skills -->
-<section id="skills" class="py-5">
-    <div class="container text-center">
-        <h2 class="section-title">Technical Skills</h2>
-
-        <div class="row">
-            <div class="col-md-3"><h6>Backend</h6><p>PHP, Laravel, Node.js, Python</p></div>
-            <div class="col-md-3"><h6>Frontend</h6><p>HTML5, CSS3, JavaScript, Bootstrap</p></div>
-            <div class="col-md-3"><h6>Database</h6><p>MySQL, PostgreSQL, MongoDB</p></div>
-            <div class="col-md-3"><h6>DevOps</h6><p>Docker, Linux, Git, CI/CD</p></div>
-        </div>
-    </div>
-</section>
-
-<!-- Projects -->
-<section id="projects" class="bg-light py-5">
-    <div class="container">
-        <h2 class="section-title text-center">Key Projects</h2>
-
-        <div class="row">
-            <div class="col-md-6 mb-4">
-                <div class="card shadow-sm h-100">
-                    <div class="card-body">
-                        <h5>Enterprise HRMS Platform</h5>
-                        <p>Modular Laravel-based HRMS with onboarding, payroll, attendance, and reporting systems.</p>
-                    </div>
+        <div class="hero-bottom">
+            <p class="hero-desc">
+                Senior Web & Software Developer with <strong style="color:var(--text)">10 years of expertise</strong>
+                building scalable web applications. Specialized in PHP ecosystems, Python backends, and modern
+                JavaScript — from concept to deployment.
+            </p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-num"><span class="stat-accent">10</span>+</span>
+                    <span class="stat-label">Years Exp.</span>
                 </div>
-            </div>
-
-            <div class="col-md-6 mb-4">
-                <div class="card shadow-sm h-100">
-                    <div class="card-body">
-                        <h5>API Microservices Architecture</h5>
-                        <p>Node.js microservices handling authentication, payments, and analytics.</p>
-                    </div>
+                <div class="stat-item">
+                    <span class="stat-num"><span class="stat-accent">80</span>+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num"><span class="stat-accent">40</span>+</span>
+                    <span class="stat-label">Clients</span>
                 </div>
             </div>
         </div>
+
+        <div class="scroll-hint">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-section">
+        <div class="marquee-track" id="marquee">
+            <div class="marquee-item">PHP 8.x</div>
+            <div class="marquee-item">WordPress</div>
+            <div class="marquee-item">Laravel 11</div>
+            <div class="marquee-item">CodeIgniter 4</div>
+            <div class="marquee-item">Python 3.x</div>
+            <div class="marquee-item">Node.js</div>
+            <div class="marquee-item">Express.js</div>
+            <div class="marquee-item">FastAPI</div>
+            <div class="marquee-item">REST APIs</div>
+            <div class="marquee-item">MySQL</div>
+            <div class="marquee-item">PostgreSQL</div>
+            <div class="marquee-item">MongoDB</div>
+            <div class="marquee-item">Redis</div>
+            <div class="marquee-item">Docker</div>
+            <div class="marquee-item">AWS</div>
+            <div class="marquee-item">CI/CD</div>
+            <div class="marquee-item">PHP 8.x</div>
+            <div class="marquee-item">WordPress</div>
+            <div class="marquee-item">Laravel 11</div>
+            <div class="marquee-item">CodeIgniter 4</div>
+            <div class="marquee-item">Python 3.x</div>
+            <div class="marquee-item">Node.js</div>
+            <div class="marquee-item">Express.js</div>
+            <div class="marquee-item">FastAPI</div>
+            <div class="marquee-item">REST APIs</div>
+            <div class="marquee-item">MySQL</div>
+            <div class="marquee-item">PostgreSQL</div>
+            <div class="marquee-item">MongoDB</div>
+            <div class="marquee-item">Redis</div>
+            <div class="marquee-item">Docker</div>
+            <div class="marquee-item">AWS</div>
+            <div class="marquee-item">CI/CD</div>
+        </div>
     </div>
-</section>
 
-<!-- Contact -->
-<section id="contact" class="py-5 text-center">
-    <div class="container">
-        <h2 class="section-title">Contact</h2>
-        <p>Email: sandeeplmitm@gmail.com</p>
-        <p>Phone: +91-9888891465</p>
-        <a href="#" class="btn btn-dark">Download Resume</a>
-    </div>
-</section>
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="about-grid">
+            <div class="about-img-wrap">
+                <div class="about-img-frame">
+                    <div class="about-img-placeholder">
+                        <div class="about-img-placeholder">
+                            <img src="https://media.licdn.com/dms/image/v2/D5603AQEvGvQZVV29cg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1706865496969?e=1775692800&v=beta&t=uA3o2OtCR9d9qvpH4n4JNY4Lu-M7Gmvp8gci-EyAxA8"
+                                alt="Sandeep Kumar — Web & Software Developer" />
+                        </div>
+                    </div>
+                </div>
+                <div class="about-img-accent"></div>
+                <div class="exp-badge"><strong>10</strong>Years<br>of Code</div>
+            </div>
+            <div class="about-text">
+                <div class="section-tag">About Me</div>
+                <h2 class="section-title" style="margin-bottom:32px">Crafting<br><em
+                        style="font-family:Fraunces,serif;font-weight:300;font-style:italic;color:var(--accent)">digital</em><br>products
+                </h2>
+                <p>I'm <strong>Sandeep Kumar</strong>, a Senior Web & Software Developer with a decade of experience
+                    transforming complex business requirements into elegant, performant web applications. My journey
+                    started with raw PHP and WordPress theming — evolving into architecting enterprise-grade Laravel and
+                    Node.js platforms.</p>
+                <p>I specialize in the <strong>full spectrum</strong>: from custom WordPress plugins and headless CMS
+                    setups, to RESTful APIs with Laravel and Python's FastAPI, to real-time apps with Node.js and
+                    Socket.IO. I don't just write code — I engineer solutions.</p>
+                <p>My philosophy: <strong>clean architecture</strong>, measurable performance, and maintainable
+                    codebases that teams actually enjoy working with.</p>
+                <a href="#contact" class="about-cta">
+                    <span>Start a Project</span>
+                    <span>→</span>
+                </a>
+            </div>
+        </div>
+    </section>
 
-<footer class="text-center">
-    <div class="container">
-        <p class="mb-0">© 2026 Sandeep Kumar | Senior Full Stack Developer</p>
-    </div>
-</footer>
+    <!-- SKILLS -->
+    <section id="skills">
+        <div class="section-tag">Technical Skills</div>
+        <h2 class="section-title">Core<br>Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-card fade-up">
+                <span class="skill-tag">10 yrs</span>
+                <span class="skill-icon">🐘</span>
+                <div class="skill-name">PHP Development</div>
+                <div class="skill-desc">Expert-level PHP development including OOP, design patterns, Composer packages,
+                    and PSR standards. Deep experience with PHP 5.x through 8.x migrations.</div>
+                <div class="skill-level">
+                    <div class="skill-dot active"></div>
+                    <div class="skill-dot active"></div>
+                    <div class="skill-dot active"></div>
+                    <div class="skill-dot active"></div>
+                    <div class="skill-dot active"></div>
+                </div>
+            </div>
+            <div class="skill-card fade-up">
+                <span class="skill-tag">9 yrs</span>
+                <span class="skill-icon">🔷</span>
+                <div class="skill-name">WordPress</div>
+                <div class="skill-desc">Custom theme development, plugin architecture, Gutenberg blocks, WooCommerce,
+                    REST API, multisite, headless WordPress with decoupled frontends.</div>
+                <div class="skill-level">
+                    <div class="skill-dot active"></div>
+                    <div class="skill-dot active"></div>
+                    <div class="skill-dot active"></div>
+                    <div class="skill-dot active"></div>
+                    <div class="skill-dot active"></div>
+                </div>
+            </div>
+            <div class="skill-card fade-up">
+                <span class="skill-tag">7 yrs</span>
+                <span class="skill-icon">🔥</span>
+                <div class="skill-name">Laravel</div>
+                <div class="skill-desc">Enterprise application development with Eloquent ORM, Queues & Jobs, Events, API
+                    resources, Sanctum/Passport auth, Livewire, Filament admin panels.</div>
+                <div class="skill-level">
+                    <div class="skill-dot active"></div>
+                    <div class="skill-dot active"></div>
+                    <div class="skill-dot active"></div>
+                    <div class="skill-dot active"></div>
+                    <div class="skill-dot"></div>
+                </div>
+            </div>
+            <div class="skill-card fade-up">
+                <span class="skill-tag">8 yrs</span>
+                <span class="skill-icon">⚡</span>
+                <div class="skill-name">CodeIgniter</div>
+                <div class="skill-desc">Lightweight MVC applications with CI3 & CI4. Legacy system maintenance and
+                    modernization. Custom libraries, hooks, and RESTful API implementations.</div>
+                <div class="skill-level">
+                    <div class="skill-dot active"></div>
+                    <div class="skill-dot active"></div>
+                    <div class="skill-dot active"></div>
+                    <div class="skill-dot active"></div>
+                    <div class="skill-dot"></div>
+                </div>
+            </div>
+            <div class="skill-card fade-up">
+                <span class="skill-tag">5 yrs</span>
+                <span class="skill-icon">🐍</span>
+                <div class="skill-name">Python</div>
+                <div class="skill-desc">Backend APIs with FastAPI & Django REST Framework, automation scripts, web
+                    scraping (Scrapy, BeautifulSoup), data pipelines, and ML model deployment.</div>
+                <div class="skill-level">
+                    <div class="skill-dot active"></div>
+                    <div class="skill-dot active"></div>
+                    <div class="skill-dot active"></div>
+                    <div class="skill-dot active"></div>
+                    <div class="skill-dot"></div>
+                </div>
+            </div>
+            <div class="skill-card fade-up">
+                <span class="skill-tag">6 yrs</span>
+                <span class="skill-icon">💚</span>
+                <div class="skill-name">Node.js</div>
+                <div class="skill-desc">Scalable backend services with Express & Fastify, real-time applications with
+                    Socket.IO, microservices architecture, GraphQL APIs, and event-driven systems.</div>
+                <div class="skill-level">
+                    <div class="skill-dot active"></div>
+                    <div class="skill-dot active"></div>
+                    <div class="skill-dot active"></div>
+                    <div class="skill-dot active"></div>
+                    <div class="skill-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- ENTERPRISE SYSTEMS SHOWCASE -->
+    <section id="projects"
+        style="background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+        <div class="section-tag">Enterprise Systems</div>
+        <h2 class="section-title">Flagship<br>Products</h2>
 
+        <!-- SCHOOL MANAGEMENT -->
+        <div class="erp-card fade-up" data-color="#47c8ff">
+            <div class="erp-header">
+                <div class="erp-icon-wrap" style="background:rgba(71,200,255,0.1);border-color:rgba(71,200,255,0.25)">
+                    <span class="erp-icon">🎓</span>
+                </div>
+                <div class="erp-meta">
+                    <div class="erp-category" style="color:#47c8ff">Education ERP</div>
+                    <div class="erp-title">School Management System</div>
+                    <div class="erp-subtitle">Complete academic institution management — admissions to alumni</div>
+                </div>
+                <div class="erp-stack-pills">
+                    <span class="spill" style="border-color:rgba(238,80,34,0.4);color:#ee5022">CodeIgniter 4</span>
+                    <span class="spill" style="border-color:rgba(119,123,253,0.4);color:#777bfd">PHP 8</span>
+                    <span class="spill" style="border-color:rgba(71,200,255,0.4);color:#47c8ff">MySQL</span>
+                    <span class="spill">Bootstrap 5</span>
+                    <span class="spill">jQuery</span>
+                </div>
+            </div>
+            <div class="erp-features">
+                <div class="erp-feat-group">
+                    <div class="erp-feat-head">📚 Academic</div>
+                    <ul class="erp-feat-list">
+                        <li>Student admissions & enrollment portal</li>
+                        <li>Class scheduling & timetable generator</li>
+                        <li>Subject & curriculum management</li>
+                        <li>Exam management & result processing</li>
+                        <li>Grade book & report card generation (PDF)</li>
+                        <li>Attendance tracking (RFID / manual)</li>
+                        <li>Library management & book issuance</li>
+                        <li>Homework & assignment submission</li>
+                    </ul>
+                </div>
+                <div class="erp-feat-group">
+                    <div class="erp-feat-head">👨‍🏫 Staff & Admin</div>
+                    <ul class="erp-feat-list">
+                        <li>Teacher & staff profiles & payroll</li>
+                        <li>Role-based access control (Admin / Teacher / Parent / Student)</li>
+                        <li>Fee collection & installment management</li>
+                        <li>SMS & email notification system</li>
+                        <li>Notice board & event calendar</li>
+                        <li>Transport route & vehicle tracking</li>
+                        <li>Hostel & room allotment module</li>
+                        <li>Multi-branch / campus support</li>
+                    </ul>
+                </div>
+                <div class="erp-feat-group">
+                    <div class="erp-feat-head">📊 Reports & Portal</div>
+                    <ul class="erp-feat-list">
+                        <li>Parent portal with real-time updates</li>
+                        <li>Online fee payment (PayPal / Stripe)</li>
+                        <li>Student progress analytics dashboard</li>
+                        <li>Attendance & leave reports</li>
+                        <li>Financial income/expense reporting</li>
+                        <li>Certificate & document generation</li>
+                        <li>Mobile-responsive interface</li>
+                        <li>Dark / light theme toggle</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="erp-footer-bar">
+                <span class="erp-stat"><strong>500+</strong> Students Managed</span>
+                <span class="erp-stat"><strong>20+</strong> Modules</span>
+                <span class="erp-stat"><strong>Multi-Branch</strong> Support</span>
+                <span class="erp-stat"><strong>REST API</strong> Ready</span>
+            </div>
+        </div>
+
+        <!-- HRMS -->
+        <div class="erp-card fade-up" data-color="#e8ff47">
+            <div class="erp-header">
+                <div class="erp-icon-wrap" style="background:rgba(232,255,71,0.1);border-color:rgba(232,255,71,0.25)">
+                    <span class="erp-icon">👥</span>
+                </div>
+                <div class="erp-meta">
+                    <div class="erp-category" style="color:#e8ff47">HR Management</div>
+                    <div class="erp-title">HRMS — Human Resource Management System</div>
+                    <div class="erp-subtitle">End-to-end HR automation from recruitment to retirement</div>
+                </div>
+                <div class="erp-stack-pills">
+                    <span class="spill" style="border-color:rgba(255,45,32,0.4);color:#ff4131">Laravel 11</span>
+                    <span class="spill" style="border-color:rgba(119,123,253,0.4);color:#777bfd">PHP 8</span>
+                    <span class="spill" style="border-color:rgba(83,158,63,0.4);color:#539e3f">Node.js</span>
+                    <span class="spill">Vue.js</span>
+                    <span class="spill">PostgreSQL</span>
+                </div>
+            </div>
+            <div class="erp-features">
+                <div class="erp-feat-group">
+                    <div class="erp-feat-head">🧑‍💼 Employee Lifecycle</div>
+                    <ul class="erp-feat-list">
+                        <li>Recruitment & job posting portal</li>
+                        <li>Applicant tracking & interview scheduling</li>
+                        <li>Onboarding workflow & document checklist</li>
+                        <li>Employee profiles & org chart</li>
+                        <li>Probation & confirmation tracking</li>
+                        <li>Transfer, promotion & demotion history</li>
+                        <li>Exit management & offboarding</li>
+                        <li>Employee self-service portal</li>
+                    </ul>
+                </div>
+                <div class="erp-feat-group">
+                    <div class="erp-feat-head">💰 Payroll & Benefits</div>
+                    <ul class="erp-feat-list">
+                        <li>Automated payroll processing & payslips</li>
+                        <li>Tax & deduction calculations (custom rules)</li>
+                        <li>Overtime, bonus & incentive management</li>
+                        <li>Leave management (annual, sick, casual, LWOP)</li>
+                        <li>Attendance integration (biometric / app)</li>
+                        <li>Loan & advance salary module</li>
+                        <li>Benefits & allowance tracking</li>
+                        <li>Bank transfer export (CSV / EFT)</li>
+                    </ul>
+                </div>
+                <div class="erp-feat-group">
+                    <div class="erp-feat-head">📈 Performance & Compliance</div>
+                    <ul class="erp-feat-list">
+                        <li>KPI setting & performance appraisals</li>
+                        <li>360° feedback & review cycles</li>
+                        <li>Training & development tracking</li>
+                        <li>Policy & document management</li>
+                        <li>Disciplinary action records</li>
+                        <li>Compliance & statutory reports</li>
+                        <li>Shift scheduling & rosters</li>
+                        <li>Real-time HR analytics dashboard</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="erp-footer-bar">
+                <span class="erp-stat"><strong>1000+</strong> Employees Supported</span>
+                <span class="erp-stat"><strong>Auto</strong> Payroll</span>
+                <span class="erp-stat"><strong>Biometric</strong> Integration</span>
+                <span class="erp-stat"><strong>Multi-Company</strong> Ready</span>
+            </div>
+        </div>
+
+        <!-- TASK MANAGEMENT -->
+        <div class="erp-card fade-up" data-color="#ff6b47">
+            <div class="erp-header">
+                <div class="erp-icon-wrap" style="background:rgba(255,107,71,0.1);border-color:rgba(255,107,71,0.25)">
+                    <span class="erp-icon">✅</span>
+                </div>
+                <div class="erp-meta">
+                    <div class="erp-category" style="color:#ff6b47">Productivity Platform</div>
+                    <div class="erp-title">TaskFlow — Project & Task Management</div>
+                    <div class="erp-subtitle">Kanban-driven project platform with real-time team collaboration</div>
+                </div>
+                <div class="erp-stack-pills">
+                    <span class="spill" style="border-color:rgba(255,45,32,0.4);color:#ff4131">Laravel</span>
+                    <span class="spill" style="border-color:rgba(83,158,63,0.4);color:#539e3f">Node.js</span>
+                    <span class="spill">Socket.IO</span>
+                    <span class="spill">Redis</span>
+                    <span class="spill">React</span>
+                </div>
+            </div>
+            <div class="erp-features">
+                <div class="erp-feat-group">
+                    <div class="erp-feat-head">📋 Task & Projects</div>
+                    <ul class="erp-feat-list">
+                        <li>Kanban, List & Gantt chart views</li>
+                        <li>Project templates & quick setup</li>
+                        <li>Task dependencies & blockers</li>
+                        <li>Priority levels & due date tracking</li>
+                        <li>Sub-tasks & checklists</li>
+                        <li>File attachments & version history</li>
+                        <li>Time tracking per task</li>
+                        <li>Recurring task automation</li>
+                    </ul>
+                </div>
+                <div class="erp-feat-group">
+                    <div class="erp-feat-head">🤝 Team Collaboration</div>
+                    <ul class="erp-feat-list">
+                        <li>Real-time task updates (WebSockets)</li>
+                        <li>In-task comments & @mentions</li>
+                        <li>Team workload view & capacity planning</li>
+                        <li>Role-based project permissions</li>
+                        <li>Activity feed & audit logs</li>
+                        <li>Slack & email notification hooks</li>
+                        <li>Guest / client access links</li>
+                        <li>Sprint planning & backlog grooming</li>
+                    </ul>
+                </div>
+                <div class="erp-feat-group">
+                    <div class="erp-feat-head">📊 Insights & Automation</div>
+                    <ul class="erp-feat-list">
+                        <li>Project progress & burndown charts</li>
+                        <li>Team performance analytics</li>
+                        <li>Custom workflow automation rules</li>
+                        <li>Deadline alert system</li>
+                        <li>Invoice generation from timesheets</li>
+                        <li>Client billing & budget tracking</li>
+                        <li>Export to PDF / CSV / Excel</li>
+                        <li>REST API & webhook support</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="erp-footer-bar">
+                <span class="erp-stat"><strong>Real-Time</strong> Sync</span>
+                <span class="erp-stat"><strong>Gantt</strong> Charts</span>
+                <span class="erp-stat"><strong>Sprint</strong> Planning</span>
+                <span class="erp-stat"><strong>Time</strong> Tracking</span>
+            </div>
+        </div>
+
+        <!-- HOSPITAL ERP -->
+        <div class="erp-card fade-up" data-color="#ff47a3">
+            <div class="erp-header">
+                <div class="erp-icon-wrap" style="background:rgba(255,71,163,0.1);border-color:rgba(255,71,163,0.25)">
+                    <span class="erp-icon">🏥</span>
+                </div>
+                <div class="erp-meta">
+                    <div class="erp-category" style="color:#ff47a3">Healthcare ERP</div>
+                    <div class="erp-title">MediCore — Hospital Management System</div>
+                    <div class="erp-subtitle">Integrated hospital ERP covering clinical, financial & administrative
+                        operations</div>
+                </div>
+                <div class="erp-stack-pills">
+                    <span class="spill" style="border-color:rgba(255,45,32,0.4);color:#ff4131">Laravel</span>
+                    <span class="spill" style="border-color:rgba(255,212,59,0.4);color:#ffd43b">Python</span>
+                    <span class="spill" style="border-color:rgba(119,123,253,0.4);color:#777bfd">PHP</span>
+                    <span class="spill">FastAPI</span>
+                    <span class="spill">MySQL</span>
+                </div>
+            </div>
+            <div class="erp-features">
+                <div class="erp-feat-group">
+                    <div class="erp-feat-head">🩺 Clinical Modules</div>
+                    <ul class="erp-feat-list">
+                        <li>OPD / IPD patient registration & queue</li>
+                        <li>Doctor appointment & scheduling system</li>
+                        <li>Electronic Medical Records (EMR)</li>
+                        <li>Prescription & drug dispensing</li>
+                        <li>Lab & radiology order management</li>
+                        <li>Lab results upload & patient access</li>
+                        <li>Operation theatre scheduling & notes</li>
+                        <li>ICU / ward bed management</li>
+                    </ul>
+                </div>
+                <div class="erp-feat-group">
+                    <div class="erp-feat-head">💊 Pharmacy & Inventory</div>
+                    <ul class="erp-feat-list">
+                        <li>Pharmacy stock management (FIFO/FEFO)</li>
+                        <li>Medicine expiry alerts & reorder levels</li>
+                        <li>Supplier purchase orders & GRN</li>
+                        <li>Drug interaction warnings</li>
+                        <li>Medical equipment maintenance log</li>
+                        <li>Blood bank management module</li>
+                        <li>Ambulance dispatch & tracking</li>
+                        <li>Dietary & nutrition management</li>
+                    </ul>
+                </div>
+                <div class="erp-feat-group">
+                    <div class="erp-feat-head">💳 Billing & Reports</div>
+                    <ul class="erp-feat-list">
+                        <li>Patient billing & invoice generation</li>
+                        <li>Insurance claim processing & TPA</li>
+                        <li>Advance payment & deposit management</li>
+                        <li>Doctor revenue share reports</li>
+                        <li>HMIS statutory & MIS reports</li>
+                        <li>Patient satisfaction feedback</li>
+                        <li>Telemedicine video consultation</li>
+                        <li>HL7 / FHIR data interoperability</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="erp-footer-bar">
+                <span class="erp-stat"><strong>EMR</strong> Compliant</span>
+                <span class="erp-stat"><strong>Insurance</strong> Integration</span>
+                <span class="erp-stat"><strong>Multi-Dept</strong> Support</span>
+                <span class="erp-stat"><strong>HL7/FHIR</strong> Ready</span>
+            </div>
+        </div>
+
+        <!-- SHOP / RETAIL ERP -->
+        <div class="erp-card fade-up" data-color="#47ffb2">
+            <div class="erp-header">
+                <div class="erp-icon-wrap" style="background:rgba(71,255,178,0.1);border-color:rgba(71,255,178,0.25)">
+                    <span class="erp-icon">🏪</span>
+                </div>
+                <div class="erp-meta">
+                    <div class="erp-category" style="color:#47ffb2">Retail ERP</div>
+                    <div class="erp-title">RetailPro — Shop & Inventory ERP</div>
+                    <div class="erp-subtitle">Complete point-of-sale and retail ERP for single stores to retail chains
+                    </div>
+                </div>
+                <div class="erp-stack-pills">
+                    <span class="spill" style="border-color:rgba(238,80,34,0.4);color:#ee5022">CodeIgniter 4</span>
+                    <span class="spill" style="border-color:rgba(119,123,253,0.4);color:#777bfd">PHP 8</span>
+                    <span class="spill" style="border-color:rgba(83,158,63,0.4);color:#539e3f">Node.js</span>
+                    <span class="spill">MySQL</span>
+                    <span class="spill">Bootstrap</span>
+                </div>
+            </div>
+            <div class="erp-features">
+                <div class="erp-feat-group">
+                    <div class="erp-feat-head">🛒 POS & Sales</div>
+                    <ul class="erp-feat-list">
+                        <li>Touch-screen POS interface</li>
+                        <li>Barcode & QR code scanning</li>
+                        <li>Multiple payment methods (cash/card/UPI)</li>
+                        <li>Customer loyalty points & discounts</li>
+                        <li>Sale returns & exchange management</li>
+                        <li>Quotation & proforma invoice</li>
+                        <li>Offline POS mode with sync</li>
+                        <li>Receipt printer & thermal support</li>
+                    </ul>
+                </div>
+                <div class="erp-feat-group">
+                    <div class="erp-feat-head">📦 Inventory & Purchase</div>
+                    <ul class="erp-feat-list">
+                        <li>Multi-warehouse stock management</li>
+                        <li>Stock transfer between branches</li>
+                        <li>Purchase orders & supplier management</li>
+                        <li>Goods receipt notes (GRN)</li>
+                        <li>Low stock alerts & auto-reorder</li>
+                        <li>Product variants (size, color, weight)</li>
+                        <li>Batch number & serial tracking</li>
+                        <li>Expiry date management</li>
+                    </ul>
+                </div>
+                <div class="erp-feat-group">
+                    <div class="erp-feat-head">📊 Finance & Reports</div>
+                    <ul class="erp-feat-list">
+                        <li>Daily / monthly / yearly sales reports</li>
+                        <li>Profit & loss per product / category</li>
+                        <li>GST / VAT tax calculation & returns</li>
+                        <li>Expense & petty cash management</li>
+                        <li>Accounts receivable & payable</li>
+                        <li>Customer credit management</li>
+                        <li>Multi-branch consolidated reports</li>
+                        <li>Cashier shift & drawer reports</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="erp-footer-bar">
+                <span class="erp-stat"><strong>Offline</strong> POS Mode</span>
+                <span class="erp-stat"><strong>Multi-Branch</strong> Ready</span>
+                <span class="erp-stat"><strong>GST/VAT</strong> Compliant</span>
+                <span class="erp-stat"><strong>Barcode</strong> Support</span>
+            </div>
+        </div>
+
+        <!-- E-COMMERCE -->
+        <div class="erp-card fade-up" data-color="#c947ff">
+            <div class="erp-header">
+                <div class="erp-icon-wrap" style="background:rgba(201,71,255,0.1);border-color:rgba(201,71,255,0.25)">
+                    <span class="erp-icon">🛍️</span>
+                </div>
+                <div class="erp-meta">
+                    <div class="erp-category" style="color:#c947ff">E-Commerce Platform</div>
+                    <div class="erp-title">ShopNest — Multi-Vendor E-Commerce</div>
+                    <div class="erp-subtitle">Scalable B2C / B2B multi-vendor marketplace with headless capabilities
+                    </div>
+                </div>
+                <div class="erp-stack-pills">
+                    <span class="spill" style="border-color:rgba(255,45,32,0.4);color:#ff4131">Laravel 11</span>
+                    <span class="spill" style="border-color:rgba(33,117,155,0.4);color:#21759b">WordPress</span>
+                    <span class="spill" style="border-color:rgba(83,158,63,0.4);color:#539e3f">Node.js</span>
+                    <span class="spill">WooCommerce</span>
+                    <span class="spill">Stripe / PayPal</span>
+                </div>
+            </div>
+            <div class="erp-features">
+                <div class="erp-feat-group">
+                    <div class="erp-feat-head">🏬 Storefront & Catalog</div>
+                    <ul class="erp-feat-list">
+                        <li>Multi-vendor seller dashboard & onboarding</li>
+                        <li>Product catalog with rich variations</li>
+                        <li>Advanced search & filter (Elasticsearch)</li>
+                        <li>Flash sales, deals & countdown timers</li>
+                        <li>Product reviews & star ratings</li>
+                        <li>Wishlist & compare products</li>
+                        <li>Recently viewed & recommendations</li>
+                        <li>Digital product & download delivery</li>
+                    </ul>
+                </div>
+                <div class="erp-feat-group">
+                    <div class="erp-feat-head">💳 Cart & Checkout</div>
+                    <ul class="erp-feat-list">
+                        <li>Guest & registered user checkout</li>
+                        <li>Multi-step & one-page checkout</li>
+                        <li>Coupon codes & bulk discount rules</li>
+                        <li>Multi-currency & multi-language (i18n)</li>
+                        <li>Stripe, PayPal, Razorpay, COD</li>
+                        <li>Abandoned cart recovery emails</li>
+                        <li>Address book & saved payments</li>
+                        <li>B2B wholesale pricing tiers</li>
+                    </ul>
+                </div>
+                <div class="erp-feat-group">
+                    <div class="erp-feat-head">📦 Orders & Marketing</div>
+                    <ul class="erp-feat-list">
+                        <li>Order tracking with status timeline</li>
+                        <li>Shipping integration (FedEx, DHL, UPS)</li>
+                        <li>Automated invoice & packing slip PDF</li>
+                        <li>Return & refund request management</li>
+                        <li>Email marketing & newsletter module</li>
+                        <li>Affiliate & referral program</li>
+                        <li>SEO management & structured data</li>
+                        <li>PWA & mobile-first responsive design</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="erp-footer-bar">
+                <span class="erp-stat"><strong>Multi-Vendor</strong> Platform</span>
+                <span class="erp-stat"><strong>PWA</strong> Ready</span>
+                <span class="erp-stat"><strong>Multi-Currency</strong></span>
+                <span class="erp-stat"><strong>Headless</strong> API</span>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- OTHER PROJECTS LIST -->
+    <section style="border-bottom:1px solid var(--border)">
+        <div class="section-tag">More Work</div>
+        <h2 class="section-title">Other<br>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-row fade-up">
+                <div class="project-num">01/</div>
+                <div class="project-info">
+                    <div class="project-title">MegaStore E-Commerce (WooCommerce)</div>
+                    <div class="project-tags">
+                        <span class="ptag wp">WordPress</span>
+                        <span class="ptag">WooCommerce</span>
+                        <span class="ptag php">PHP</span>
+                        <span class="ptag node">Node.js</span>
+                    </div>
+                </div>
+                <div class="project-arrow">↗</div>
+            </div>
+            <div class="project-row fade-up">
+                <div class="project-num">02/</div>
+                <div class="project-info">
+                    <div class="project-title">RealEstate CRM & Property Portal</div>
+                    <div class="project-tags">
+                        <span class="ptag ci">CodeIgniter</span>
+                        <span class="ptag php">PHP</span>
+                        <span class="ptag">Google Maps API</span>
+                        <span class="ptag">MySQL</span>
+                    </div>
+                </div>
+                <div class="project-arrow">↗</div>
+            </div>
+            <div class="project-row fade-up">
+                <div class="project-num">03/</div>
+                <div class="project-info">
+                    <div class="project-title">LiveChat & Support Ticketing</div>
+                    <div class="project-tags">
+                        <span class="ptag node">Node.js</span>
+                        <span class="ptag">Socket.IO</span>
+                        <span class="ptag laravel">Laravel</span>
+                        <span class="ptag">Redis</span>
+                    </div>
+                </div>
+                <div class="project-arrow">↗</div>
+            </div>
+            <div class="project-row fade-up">
+                <div class="project-num">04/</div>
+                <div class="project-info">
+                    <div class="project-title">AI Content Automation Pipeline</div>
+                    <div class="project-tags">
+                        <span class="ptag python">Python</span>
+                        <span class="ptag">FastAPI</span>
+                        <span class="ptag wp">WordPress</span>
+                        <span class="ptag node">Node.js</span>
+                    </div>
+                </div>
+                <div class="project-arrow">↗</div>
+            </div>
+            <div class="project-row fade-up">
+                <div class="project-num">05/</div>
+                <div class="project-info">
+                    <div class="project-title">Headless WordPress + Next.js Blog</div>
+                    <div class="project-tags">
+                        <span class="ptag wp">WordPress</span>
+                        <span class="ptag">GraphQL</span>
+                        <span class="ptag node">Node.js</span>
+                        <span class="ptag">Next.js</span>
+                    </div>
+                </div>
+                <div class="project-arrow">↗</div>
+            </div>
+            <div class="project-row fade-up">
+                <div class="project-num">06/</div>
+                <div class="project-info">
+                    <div class="project-title">FinTech Loan Management Portal</div>
+                    <div class="project-tags">
+                        <span class="ptag laravel">Laravel</span>
+                        <span class="ptag python">Python</span>
+                        <span class="ptag">REST API</span>
+                        <span class="ptag">PostgreSQL</span>
+                    </div>
+                </div>
+                <div class="project-arrow">↗</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+        <div class="section-tag">Career Path</div>
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item fade-up">
+                <div class="timeline-period">2022 — Present</div>
+                <div class="timeline-role">Senior Web & Software Developer</div>
+                <div class="timeline-company">TechVision Agency — Remote</div>
+                <div class="timeline-desc">Architect and lead development of enterprise web platforms. Specialize in
+                    Laravel + Node.js microservices, Python data APIs, and WordPress multisite networks. Mentor junior
+                    developers and establish coding standards and CI/CD pipelines.</div>
+            </div>
+            <div class="timeline-item fade-up">
+                <div class="timeline-period">2019 — 2022</div>
+                <div class="timeline-role">Full-Stack PHP Developer</div>
+                <div class="timeline-company">NexCore Solutions — Hybrid</div>
+                <div class="timeline-desc">Built and maintained 20+ client projects using Laravel and CodeIgniter
+                    frameworks. Led WooCommerce customization efforts and developed REST APIs consumed by React
+                    frontends. Introduced Python-based automation saving 15+ hrs/week.</div>
+            </div>
+            <div class="timeline-item fade-up">
+                <div class="timeline-period">2016 — 2019</div>
+                <div class="timeline-role">WordPress & PHP Developer</div>
+                <div class="timeline-company">PixelForge Digital — On-site</div>
+                <div class="timeline-desc">Developed custom WordPress themes, plugins, and WooCommerce integrations for
+                    30+ e-commerce clients. Transitioned from WordPress-only to full CodeIgniter applications as
+                    responsibilities grew.</div>
+            </div>
+            <div class="timeline-item fade-up">
+                <div class="timeline-period">2014 — 2016</div>
+                <div class="timeline-role">Junior Web Developer</div>
+                <div class="timeline-company">StartSpark Labs — On-site</div>
+                <div class="timeline-desc">Started career building HTML/CSS/PHP websites and WordPress blogs. First
+                    exposure to CodeIgniter MVC patterns, jQuery, MySQL databases, and version control with Git.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <div class="contact-inner">
+            <div>
+                <div class="section-tag">Get in Touch</div>
+                <h2 class="contact-title">Let's build<br>something<br><em>great</em>.</h2>
+                <div class="contact-links">
+                    <a href="mailto:ksandeep1465eep@gmail.com" target="_blank" class="contact-link">
+                        <span class="contact-link-icon">✉</span>
+                        <span>ksandeep1465eep@gmail.com</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sandeep-kumar-%E2%80%93-full-stack-web-developer-581a78aa/"
+                        target="_blank" class="contact-link">
+                        <span class="contact-link-icon">in</span>
+                        <span>linkedin.com/in/sandeep-kumar</span>
+                    </a>
+                    <a href="https://github.com/SK031989" target="_blank" class="contact-link">
+                        <span class="contact-link-icon">◈</span>
+                        <span>github.com/sandeep-kumar</span>
+                    </a>
+                    <a href="#" class="contact-link" target="_blank">
+                        <span class="contact-link-icon">⌘</span>
+                        <span>upwork.com/freelancers/sandeepkumar</span>
+                    </a>
+                    <a href="https://wa.me/919888891456" target="_blank" class="contact-link">
+                        <span class="contact-link-icon">💬</span>
+                        <span>WhatsApp: +91 98888 91456</span>
+                    </a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your name">
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="your@email.com">
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="project">Project Type</label>
+                    <input type="text" id="project" placeholder="e.g. Laravel API, WordPress Site...">
+                </div>
+                <div class="form-field">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" placeholder="Tell me about your project..."></textarea>
+                </div>
+                <button class="form-submit">Send Message →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-copy">© 2024 <span>Sandeep Kumar</span>. Built with passion & precision.</div>
+        <div class="footer-right">
+            <span style="color:var(--accent)">●</span> Available for Freelance
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
 </body>
+
 </html>
