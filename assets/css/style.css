@@ -1424,4 +1424,25 @@ footer {
     .toggle-label {
         display: none;
     }
+
+    .toggle-wrap {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .theme-btn {
+        width: 50px;
+        height: 26px;
+    }
+
+    .theme-knob {
+        width: 18px;
+        height: 18px;
+        font-size: 0.55rem;
+    }
+
+    [data-theme="light"] .theme-knob {
+        transform: translateX(24px);
+    }
 }
