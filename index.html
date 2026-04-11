@@ -122,7 +122,8 @@
             <div class="about-img-wrap">
                 <div class="about-img-frame">
                     <div class="about-img-placeholder">
-                        <img height="100%" width="100%" src="./assets/images/SandeepKumar1.jpg" alt="Sandeep Kumar — Web & Software Developer">
+                        <img height="100%" width="100%" src="./assets/images/SandeepKumar1.jpg"
+                            alt="Sandeep Kumar — Web & Software Developer">
                     </div>
                 </div>
                 <div class="about-img-accent">
@@ -239,7 +240,8 @@
         <div class="erp-card fade-up">
             <div class="erp-header">
                 <div class="erp-icon-wrap" style="background:rgba(71,200,255,0.1);border-color:rgba(71,200,255,0.25)">
-                    <span class="erp-icon">🎓</span></div>
+                    <span class="erp-icon">🎓</span>
+                </div>
                 <div class="erp-meta">
                     <div class="erp-category" style="color:#47c8ff">Education ERP</div>
                     <div class="erp-title">School Management System</div>
@@ -302,7 +304,8 @@
         <div class="erp-card fade-up">
             <div class="erp-header">
                 <div class="erp-icon-wrap" style="background:rgba(232,255,71,0.1);border-color:rgba(232,255,71,0.25)">
-                    <span class="erp-icon">👥</span></div>
+                    <span class="erp-icon">👥</span>
+                </div>
                 <div class="erp-meta">
                     <div class="erp-category" style="color:#e8ff47">HR Management</div>
                     <div class="erp-title">HRMS — Human Resource Management System</div>
@@ -365,7 +368,8 @@
         <div class="erp-card fade-up">
             <div class="erp-header">
                 <div class="erp-icon-wrap" style="background:rgba(255,107,71,0.1);border-color:rgba(255,107,71,0.25)">
-                    <span class="erp-icon">✅</span></div>
+                    <span class="erp-icon">✅</span>
+                </div>
                 <div class="erp-meta">
                     <div class="erp-category" style="color:#ff6b47">Productivity Platform</div>
                     <div class="erp-title">TaskFlow — Project &amp; Task Management</div>
@@ -427,7 +431,8 @@
         <div class="erp-card fade-up">
             <div class="erp-header">
                 <div class="erp-icon-wrap" style="background:rgba(255,71,163,0.1);border-color:rgba(255,71,163,0.25)">
-                    <span class="erp-icon">🏥</span></div>
+                    <span class="erp-icon">🏥</span>
+                </div>
                 <div class="erp-meta">
                     <div class="erp-category" style="color:#ff47a3">Healthcare ERP</div>
                     <div class="erp-title">MediCore — Hospital Management System</div>
@@ -491,7 +496,8 @@
         <div class="erp-card fade-up">
             <div class="erp-header">
                 <div class="erp-icon-wrap" style="background:rgba(71,255,178,0.1);border-color:rgba(71,255,178,0.25)">
-                    <span class="erp-icon">🏪</span></div>
+                    <span class="erp-icon">🏪</span>
+                </div>
                 <div class="erp-meta">
                     <div class="erp-category" style="color:#47ffb2">Retail ERP</div>
                     <div class="erp-title">RetailPro — Shop &amp; Inventory ERP</div>
@@ -555,7 +561,8 @@
         <div class="erp-card fade-up">
             <div class="erp-header">
                 <div class="erp-icon-wrap" style="background:rgba(201,71,255,0.1);border-color:rgba(201,71,255,0.25)">
-                    <span class="erp-icon">🛍️</span></div>
+                    <span class="erp-icon">🛍️</span>
+                </div>
                 <div class="erp-meta">
                     <div class="erp-category" style="color:#c947ff">E-Commerce Platform</div>
                     <div class="erp-title">ShopNest — Multi-Vendor E-Commerce</div>
@@ -744,7 +751,35 @@
                 </div>
             </div>
             <div class="contact-form">
-                <div class="form-row">
+                <form action="https://formspree.io/f/xlgoqjgv"  method="POST" class="contact-form">
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label>Name</label>
+                            <input type="text" name="name" placeholder="Your name" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder="your@email.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <label>Project Type</label>
+                        <input type="text" name="project" placeholder="e.g. Laravel API, WordPress Site...">
+                    </div>
+
+                    <div class="form-field">
+                        <label>Message</label>
+                        <textarea name="message" rows="5" placeholder="Tell me about your project..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="form-submit">Send Message →</button>
+
+                </form>
+                <!-- <div class="form-row">
                     <div class="form-field"><label for="cname">Name</label><input type="text" id="cname"
                             placeholder="Your name"></div>
                     <div class="form-field"><label for="cemail">Email</label><input type="email" id="cemail"
@@ -754,14 +789,17 @@
                         placeholder="e.g. Laravel API, WordPress Site..."></div>
                 <div class="form-field"><label for="cmessage">Message</label><textarea id="cmessage" rows="5"
                         placeholder="Tell me about your project..."></textarea></div>
-                <button class="form-submit">Send Message →</button>
+                <button class="form-submit">Send Message →</button> -->
             </div>
         </div>
     </section>
 
     <!-- FOOTER -->
     <footer>
-        <div class="footer-copy">© <script>document.write(new Date().getFullYear())</script> <span>Sandeep Kumar</span>. Built with passion &amp; precision.</div>
+        <div class="footer-copy">©
+            <script>document.write(new Date().getFullYear())</script> <span>Sandeep Kumar</span>. Built with passion
+            &amp; precision.
+        </div>
         <div class="footer-right"><span style="color:var(--accent)">●</span> Available for Freelance</div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
