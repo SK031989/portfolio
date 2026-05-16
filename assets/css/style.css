@@ -1453,6 +1453,14 @@ footer {
     [data-theme="light"] .theme-knob {
         transform: translateX(24px);
     }
+
+    /* Remove underline from links */
+    .erp-meta,
+    .erp-meta:hover,
+    .erp-meta:focus,
+    .erp-meta:active {
+        text-decoration: none;
+    }
 }
 
 /* ============================================================
