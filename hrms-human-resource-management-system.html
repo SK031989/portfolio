@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete User Manual | HRMS — Human Resource Management System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #e8ff47;
+            --primary-dark: #1e40af;
+            --bg: #f8fafc;
+            --card: #ffffff;
+            --text: #0f172a;
+            --muted: #64748b;
+            --border: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0f172a 0%, #e8ff47 100%);
+            color: #0f172a;
+            padding: 100px 0;
+            text-align: center;
+            border-radius: 0 0 50px 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 60px;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Outfit', sans-serif;
+            margin-top: 0;
+            text-decoration: none;
+        }
+
+        .guide-section {
+            background: var(--card);
+            border-radius: 30px;
+            padding: 50px;
+            margin-bottom: 50px;
+            box-shadow: 0 10px 40px rgba(15, 23, 42, 0.05);
+            border: 1px solid var(--border);
+        }
+
+        .screenshot-container {
+            background: #0f172a;
+            padding: 15px;
+            border-radius: 20px;
+            margin: 30px 0;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+        }
+
+        .screenshot {
+            width: 100%;
+            display: block;
+            border-radius: 12px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            text-decoration: none;
+        }
+
+        .badge-admin { background: #dbeafe; color: #1e40af; }
+        .badge-hr { background: #fef3c7; color: #92400e; }
+
+        .module-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .module-item {
+            padding: 25px;
+            background: #f8fafc;
+            border-radius: 20px;
+            border: 1px solid var(--border);
+            transition: transform 0.3s ease;
+            text-decoration: none;
+        }
+
+        .module-item:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+
+        .step-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .step-list li {
+            padding-left: 35px;
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        .step-list li::before {
+            content: "\F272";
+            font-family: "bootstrap-icons";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        nav.toc {
+            background: white;
+            padding: 25px;
+            border-radius: 20px;
+            border: 1px solid var(--border);
+            margin-bottom: 40px;
+            position: sticky;
+            top: 20px;
+            z-index: 100;
+        }
+
+        .toc h4 { margin: 0 0 15px; border-bottom: 2px solid var(--primary); display: inline-block; }
+        .toc-links { display: flex; flex-wrap: wrap; gap: 15px; }
+        .toc-links a { text-decoration: none; color: var(--muted); font-weight: 500; font-size: 0.9rem; }
+        .toc-links a:hover { color: var(--primary); }
+
+        @media print {
+            nav.toc { display: none; }
+            .guide-section { break-inside: avoid; }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>HRMS — Human Resource Management System</h1>
+        <p>Complete User Manual & Administrative Guide</p>
+    </div>
+</header>
+
+<div class="container">
+    <nav class="toc">
+        <h4>Table of Contents</h4>
+        <div class="toc-links">
+            <a href="#employee-lifecycle">Employee Lifecycle</a>
+            <a href="#payroll">Payroll & Benefits</a>
+            <a href="#performance">Performance Management</a>
+            <a href="#reporting">Reporting & Analytics</a>
+            <a href="#compliance">Compliance</a>
+        </div>
+    </nav>
+
+    <!-- Employee Lifecycle Section -->
+    <section class="guide-section" id="employee-lifecycle">
+        <h2>Employee Lifecycle Management</h2>
+        <p>Manage complete employee journey from recruitment through retirement with comprehensive tracking and automation.</p>
+        
+        <span class="badge badge-admin">Admin Module</span>
+        <span class="badge badge-hr">HR Module</span>
+
+        <h3>Recruitment & Onboarding</h3>
+        <ul class="step-list">
+            <li><strong>Job Postings:</strong> Create and manage job openings with detailed job descriptions and requirements.</li>
+            <li><strong>Applicant Tracking:</strong> Track applications from submission through hiring decision.</li>
+            <li><strong>Interview Scheduling:</strong> Automated scheduling system for candidate interviews.</li>
+            <li><strong>Onboarding Workflow:</strong> Digital onboarding checklist and document collection.</li>
+            <li><strong>New Hire Portal:</strong> Self-service portal for new employees to complete setup.</li>
+        </ul>
+
+        <h3>Employee Profiles & Organization</h3>
+        <ul class="step-list">
+            <li><strong>Employee Database:</strong> Centralized employee information management.</li>
+            <li><strong>Organization Chart:</strong> Visual representation of company hierarchy.</li>
+            <li><strong>Department Management:</strong> Organize employees by departments and teams.</li>
+            <li><strong>Role & Designation:</strong> Track roles, designations, and reporting relationships.</li>
+            <li><strong>Skills & Certifications:</strong> Maintain employee skills and certification records.</li>
+        </ul>
+
+        <h3>Career Development</h3>
+        <ul class="step-list">
+            <li><strong>Promotion Tracking:</strong> Record promotions and career progression.</li>
+            <li><strong>Transfer Management:</strong> Handle inter-departmental and inter-company transfers.</li>
+            <li><strong>Training & Development:</strong> Track training programs and skill development.</li>
+            <li><strong>Performance Goals:</strong> Set and monitor performance objectives.</li>
+            <li><strong>Exit Management:</strong> Structured offboarding and resignation process.</li>
+        </ul>
+    </section>
+
+    <!-- Payroll Section -->
+    <section class="guide-section" id="payroll">
+        <h2>Payroll & Benefits Management</h2>
+        <p>Automated payroll processing with tax calculations, deductions, and benefit management.</p>
+
+        <span class="badge badge-admin">Admin Module</span>
+
+        <h3>Salary Structure</h3>
+        <ul class="step-list">
+            <li><strong>Salary Templates:</strong> Define salary components (basic, allowances, deductions).</li>
+            <li><strong>Custom Rules:</strong> Set up complex tax and deduction calculation rules.</li>
+            <li><strong>Pay Grades:</strong> Organize salary bands and pay grades.</li>
+            <li><strong>Annual Increments:</strong> Automated annual salary increment processing.</li>
+            <li><strong>Variable Pay:</strong> Manage bonuses, incentives, and commissions.</li>
+        </ul>
+
+        <h3>Payroll Processing</h3>
+        <ul class="step-list">
+            <li><strong>Attendance Integration:</strong> Auto-calculate based on attendance records.</li>
+            <li><strong>Payroll Run:</strong> Batch process monthly/bi-weekly payroll.</li>
+            <li><strong>Payslips:</strong> Generate and distribute digital payslips.</li>
+            <li><strong>Bank Transfer:</strong> Export payroll data for bank processing (CSV/EFT).</li>
+            <li><strong>Tax Deductions:</strong> Automatic income tax, professional tax, and other statutory deductions.</li>
+        </ul>
+
+        <h3>Leave & Attendance</h3>
+        <ul class="step-list">
+            <li><strong>Leave Types:</strong> Configure leave types (annual, sick, casual, LWOP, special).</li>
+            <li><strong>Leave Applications:</strong> Employee portal for leave requests with approval workflow.</li>
+            <li><strong>Attendance Tracking:</strong> Biometric integration or manual attendance marking.</li>
+            <li><strong>Shift Management:</strong> Define shifts and manage employee scheduling.</li>
+            <li><strong>Holiday Calendar:</strong> Maintain company holiday calendar.</li>
+        </ul>
+
+        <h3>Benefits Administration</h3>
+        <ul class="step-list">
+            <li><strong>Health Insurance:</strong> Manage employee health insurance enrollment.</li>
+            <li><strong>Provident Fund:</strong> Track EPF contributions and balances.</li>
+            <li><strong>Loan Management:</strong> Track employee loans and advances.</li>
+            <li><strong>Allowances:</strong> Manage housing, food, and other allowances.</li>
+            <li><strong>Deductions:</strong> Configure salary deductions for loans and other amounts.</li>
+        </ul>
+    </section>
+
+    <!-- Performance Management Section -->
+    <section class="guide-section" id="performance">
+        <h2>Performance Management & Appraisals</h2>
+        <p>Comprehensive performance evaluation system with 360° feedback and development tracking.</p>
+
+        <span class="badge badge-hr">HR Module</span>
+
+        <h3>Performance Appraisals</h3>
+        <ul class="step-list">
+            <li><strong>Appraisal Cycles:</strong> Define annual/quarterly appraisal periods.</li>
+            <li><strong>Goal Setting:</strong> Set individual and team KPIs at cycle start.</li>
+            <li><strong>Self Assessment:</strong> Employees evaluate their own performance.</li>
+            <li><strong>Manager Review:</strong> Manager assessment and feedback.</li>
+            <li><strong>360° Feedback:</strong> Gather feedback from peers, subordinates, and supervisors.</li>
+        </ul>
+
+        <h3>Performance Ratings</h3>
+        <ul class="step-list">
+            <li><strong>Rating Scale:</strong> Configurable rating scales (1-5, 1-10, etc).</li>
+            <li><strong>Competencies:</strong> Evaluate employee competencies and skills.</li>
+            <li><strong>Calibration:</strong> Standardize ratings across departments.</li>
+            <li><strong>Performance History:</strong> Track historical appraisals and trends.</li>
+            <li><strong>Performance Reports:</strong> Analytics on appraisal results.</li>
+        </ul>
+
+        <h3>Development & Training</h3>
+        <ul class="step-list">
+            <li><strong>Development Plans:</strong> Create personalized development plans based on appraisals.</li>
+            <li><strong>Training Catalog:</strong> Maintain catalog of available training programs.</li>
+            <li><strong>Training Enrollment:</strong> Enroll employees in training programs.</li>
+            <li><strong>Certification Tracking:</strong> Track employee certifications and renewals.</li>
+            <li><strong>Skills Gap Analysis:</strong> Identify and address skills gaps.</li>
+        </ul>
+    </section>
+
+    <!-- Reporting Section -->
+    <section class="guide-section" id="reporting">
+        <h2>Reporting & Analytics</h2>
+        <p>Comprehensive HR analytics and reports for data-driven decision making.</p>
+
+        <span class="badge badge-admin">Admin Module</span>
+
+        <h3>HR Analytics Dashboard</h3>
+        <ul class="step-list">
+            <li><strong>Employee Metrics:</strong> Total headcount, new hires, exits, turnover rate.</li>
+            <li><strong>Payroll Analytics:</strong> Total payroll cost, cost per employee, benefits spend.</li>
+            <li><strong>Attendance Analytics:</strong> Average attendance rate, top absentees.</li>
+            <li><strong>Performance Analytics:</strong> Performance rating distribution, high performers.</li>
+            <li><strong>Real-time Dashboards:</strong> Live updating key metrics and KPIs.</li>
+        </ul>
+
+        <h3>Standard Reports</h3>
+        <ul class="step-list">
+            <li><strong>Payroll Reports:</strong> Monthly payroll summary, deduction analysis.</li>
+            <li><strong>Statutory Reports:</strong> Provident fund, gratuity, income tax reports.</li>
+            <li><strong>Attendance Reports:</strong> Attendance summary, leave utilization.</li>
+            <li><strong>Employee Reports:</strong> Employee directory, organization structure.</li>
+            <li><strong>Compliance Reports:</strong> FLSA compliance, working hours tracking.</li>
+        </ul>
+
+        <h3>Custom Reports</h3>
+        <ul class="step-list">
+            <li><strong>Report Builder:</strong> Create custom reports with drag-and-drop fields.</li>
+            <li><strong>Scheduled Reports:</strong> Automate report generation and email delivery.</li>
+            <li><strong>Export Options:</strong> Export to PDF, Excel, CSV formats.</li>
+            <li><strong>Data Visualization:</strong> Charts, graphs, and pivot table support.</li>
+            <li><strong>Report Scheduling:</strong> Set up recurring reports with custom frequency.</li>
+        </ul>
+    </section>
+
+    <!-- Compliance Section -->
+    <section class="guide-section" id="compliance">
+        <h2>Compliance & Policy Management</h2>
+        <p>Ensure regulatory compliance and maintain consistent HR policies across the organization.</p>
+
+        <span class="badge badge-admin">Admin Module</span>
+
+        <h3>Policy Management</h3>
+        <ul class="step-list">
+            <li><strong>Policy Library:</strong> Centralized repository of HR policies.</li>
+            <li><strong>Policy Distribution:</strong> Notify employees of policy updates and changes.</li>
+            <li><strong>Acknowledgment Tracking:</strong> Track employee acknowledgment of policies.</li>
+            <li><strong>Version Control:</strong> Maintain policy version history.</li>
+            <li><strong>Policy Categories:</strong> Code of conduct, attendance, leave, anti-harassment policies.</li>
+        </ul>
+
+        <h3>Compliance Tracking</h3>
+        <ul class="step-list">
+            <li><strong>Document Management:</strong> Store and track compliance-related documents.</li>
+            <li><strong>Background Verification:</strong> Track background check status and expiry.</li>
+            <li><strong>License & Certificate Tracking:</strong> Monitor professional licenses and certifications.</li>
+            <li><strong>Statutory Compliance:</strong> Track labor law compliance and regulatory requirements.</li>
+            <li><strong>Audit Trail:</strong> Complete audit trail of all HR actions and changes.</li>
+        </ul>
+
+        <h3>Disciplinary Action</h3>
+        <ul class="step-list">
+            <li><strong>Incident Reporting:</strong> Report and track employee incidents and violations.</li>
+            <li><strong>Disciplinary Process:</strong> Structured workflow for disciplinary actions.</li>
+            <li><strong>Action Records:</strong> Maintain records of warnings, suspensions, and terminations.</li>
+            <li><strong>Appeal Management:</strong> Track employee appeals and responses.</li>
+            <li><strong>Documentation:</strong> Auto-generate disciplinary action documents and notices.</li>
+        </ul>
+    </section>
+
+</div>
+
+</body>
+</html>
