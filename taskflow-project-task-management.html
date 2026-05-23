@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Complete User Manual | School Management System</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap"
-        rel="stylesheet">
+    <title>Complete User Manual | SprintDesk SaaS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
             --primary: #2563eb;
@@ -27,10 +24,6 @@
             line-height: 1.6;
         }
 
-        a {
-            text-decoration: none;
-        }
-
         .container {
             max-width: 1100px;
             margin: 0 auto;
@@ -43,13 +36,11 @@
             padding: 100px 0;
             text-align: center;
             border-radius: 0 0 50px 50px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             margin-bottom: 60px;
         }
 
-        h1,
-        h2,
-        h3 {
+        h1, h2, h3 {
             font-family: 'Outfit', sans-serif;
             margin-top: 0;
         }
@@ -68,7 +59,7 @@
             padding: 15px;
             border-radius: 20px;
             margin: 30px 0;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
         }
 
         .screenshot {
@@ -88,15 +79,8 @@
             margin-bottom: 20px;
         }
 
-        .badge-admin {
-            background: #dbeafe;
-            color: #1e40af;
-        }
-
-        .badge-super {
-            background: #fef3c7;
-            color: #92400e;
-        }
+        .badge-admin { background: #dbeafe; color: #1e40af; }
+        .badge-super { background: #fef3c7; color: #92400e; }
 
         .module-grid {
             display: grid;
@@ -149,209 +133,191 @@
             z-index: 100;
         }
 
-        .toc h4 {
-            margin: 0 0 15px;
-            border-bottom: 2px solid var(--primary);
-            display: inline-block;
-        }
-
-        .toc-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-
-        .toc-links a {
-            text-decoration: none;
-            color: var(--muted);
-            font-weight: 500;
-            font-size: 0.9rem;
-        }
-
-        .toc-links a:hover {
-            color: var(--primary);
-        }
+        .toc h4 { margin: 0 0 15px; border-bottom: 2px solid var(--primary); display: inline-block; }
+        .toc-links { display: flex; flex-wrap: wrap; gap: 15px; }
+        .toc-links a { text-decoration: none; color: var(--muted); font-weight: 500; font-size: 0.9rem; }
+        .toc-links a:hover { color: var(--primary); }
 
         @media print {
-            nav.toc {
-                display: none;
-            }
-
-            .guide-section {
-                break-inside: avoid;
-            }
+            nav.toc { display: none; }
+            .guide-section { break-inside: avoid; }
         }
     </style>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
-
 <body>
 
-    <header>
-        <div class="container">
-            <h1 style="font-size: 4rem; margin-bottom: 15px; letter-spacing: -1px;">System User Manual</h1>
-            <p style="font-size: 1.4rem; opacity: 0.9; font-weight: 400;">Module-wise documentation with real system
-                captures</p>
-        </div>
-    </header>
-
+<header>
     <div class="container">
-        <nav class="toc">
-            <h4>Quick Navigation</h4>
-            <div class="toc-links">
-                <a href="#login">Authentication</a>
-                <a href="#dashboard">Dashboard</a>
-                <a href="#students">Students</a>
-                <a href="#teachers">Teachers</a>
-                <a href="#attendance">Attendance</a>
-                <a href="#fees">Fees</a>
-                <a href="#superadmin">Super Admin</a>
-            </div>
-        </nav>
+        <h1 style="font-size: 4rem; margin-bottom: 15px; letter-spacing: -1px;">SprintDesk User Manual</h1>
+        <p style="font-size: 1.4rem; opacity: 0.9; font-weight: 400;">Module-wise documentation with real system captures</p>
+    </div>
+</header>
 
-        <!-- SECTION: AUTHENTICATION -->
-        <div class="guide-section" id="login">
-            <div class="badge badge-admin">Access Control</div>
-            <h2>1. Accessing the Platform</h2>
-            <p>Your portal to school management. Log in with your unique credentials to access the modules assigned to
-                your role.</p>
+<div class="container">
+    <nav class="toc">
+        <h4>Quick Navigation</h4>
+        <div class="toc-links">
+            <a href="#login">Authentication</a>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#students">Clients</a>
+            <a href="#projects">Projects & Tasks</a>
+            <a href="#teachers">Teams</a>
+            <a href="#attendance">Sprint Tracking & Progress</a>
+            <a href="#fees">Invoice & Billing</a>
+            <a href="#superadmin">Super Admin</a>
+        </div>
+    </nav>
 
-            <div class="screenshot-container">
-                <img src="assets/tms/screenshots/login.png" alt="Login Page" class="screenshot">
-            </div>
-
-            <div class="module-grid">
-                <div class="module-item">
-                    <i class="bi bi-shield-lock-fill fs-3 text-primary mb-3 d-block"></i>
-                    <strong>Secure Login</strong>
-                    <p>Standard encrypted authentication for all users (Admins, Teachers, Students).</p>
-                </div>
-                <div class="module-item">
-                    <i class="bi bi-palette-fill fs-3 text-primary mb-3 d-block"></i>
-                    <strong>Landing Page</strong>
-                    <p>A beautiful marketing front-end with dynamic theme switching for guests.</p>
-                </div>
-            </div>
+    <!-- SECTION: AUTHENTICATION -->
+    <div class="guide-section" id="login">
+        <div class="badge badge-admin">Access Control</div>
+        <h2>1. Accessing the Platform</h2>
+        <p>Your portal to project operations. Log in with your unique credentials to access the modules assigned to your administrative, team, or client role.</p>
+        
+        <div class="screenshot-container">
+            <img src="assets/tms/screenshots/login.png" alt="Login Page" class="screenshot">
         </div>
 
-        <!-- SECTION: DASHBOARD -->
-        <div class="guide-section" id="dashboard">
-            <div class="badge badge-admin">Real-time Analytics</div>
-            <h2>2. Admin Dashboard</h2>
-            <p>The central hub for your school operations. Get an instant snapshot of your institution's health.</p>
-
-            <div class="screenshot-container">
-                <img src="assets/tms/screenshots/dashboard.png" alt="Admin Dashboard" class="screenshot">
+        <div class="module-grid">
+            <div class="module-item">
+                <i class="bi bi-shield-lock-fill fs-3 text-primary mb-3 d-block"></i>
+                <strong>Secure Login</strong>
+                <p>Standard encrypted authentication for all users (Admins, Team Members, and Clients).</p>
             </div>
-
-            <h3>Key Features:</h3>
-            <ul class="step-list">
-                <li><strong>Live Stat Cards:</strong> Monitor student, teacher, and class counts in real-time.</li>
-                <li><strong>Theme Switching:</strong> Access the palette icon in the top bar to change themes or toggle
-                    Dark Mode instantly.</li>
-                <li><strong>Quick Search:</strong> Find any student or teacher record directly from the global search.
-                </li>
-            </ul>
-        </div>
-
-        <!-- SECTION: STUDENTS -->
-        <div class="guide-section" id="students">
-            <div class="badge badge-admin">Academics</div>
-            <h2>3. Student Management</h2>
-            <p>Comprehensive student lifecycle management from admission to graduation.</p>
-
-            <div class="screenshot-container">
-                <img src="assets/tms/screenshots/students.png" alt="Student List" class="screenshot">
-            </div>
-
-            <div class="module-grid">
-                <div class="module-item">
-                    <strong>Admissions</strong>
-                    <p>Register new students with full profile details, parent info, and document uploads.</p>
-                </div>
-                <div class="module-item">
-                    <strong>Promotions</strong>
-                    <p>Bulk promote students to the next class at the end of the term with automated verification.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- SECTION: TEACHERS -->
-        <div class="guide-section" id="teachers">
-            <div class="badge badge-admin">Academics</div>
-            <h2>4. Teacher Directory</h2>
-            <p>Manage your faculty, assign class teachers, and track staff attendance.</p>
-
-            <div class="screenshot-container">
-                <img src="assets/tms/screenshots/teachers.png" alt="Teacher List" class="screenshot">
-            </div>
-        </div>
-
-        <!-- SECTION: ATTENDANCE -->
-        <div class="guide-section" id="attendance">
-            <div class="badge badge-admin">Daily Operations</div>
-            <h2>5. Digital Attendance</h2>
-            <p>Quick, mobile-friendly attendance marking for every class and section.</p>
-
-            <div class="screenshot-container">
-                <img src="assets/tms/screenshots/attendance.png" alt="Attendance Marking" class="screenshot">
-            </div>
-
-            <p>Select your class, section, and date. Mark students as Present, Absent, or Late with a single tap. The
-                system automatically notifies parents of absences.</p>
-        </div>
-
-        <!-- SECTION: FEES -->
-        <div class="guide-section" id="fees">
-            <div class="badge badge-admin">Billing & Finance</div>
-            <h2>6. Fee Management</h2>
-            <p>Transparent and efficient fee collection with automated receipt generation.</p>
-
-            <div class="screenshot-container">
-                <img src="assets/tms/screenshots/fees.png" alt="Fees Management" class="screenshot">
-            </div>
-        </div>
-
-        <!-- SECTION: SUPER ADMIN -->
-        <div class="guide-section" id="superadmin">
-            <div class="badge badge-super">System Administration</div>
-            <h2>7. Super Admin Control Panel</h2>
-            <p>The global command center for the entire SaaS platform. Manage multiple schools and subscription plans.
-            </p>
-
-            <div class="screenshot-container">
-                <img src="assets/tms/screenshots/super_admin_dashboard.png" alt="Super Admin Dashboard" class="screenshot">
-            </div>
-
-            <h3>Tenant & Subscription Management:</h3>
-            <div class="module-grid">
-                <div class="module-item">
-                    <strong>School Tenants</strong>
-                    <p>Monitor all registered schools, their status (Active/Suspended), and subscription health.</p>
-                    <img src="assets/tms/screenshots/tenants.png" alt="Tenants List" class="screenshot"
-                        style="margin-top: 15px; border-radius: 8px;">
-                </div>
-                <div class="module-item">
-                    <strong>SaaS Plans</strong>
-                    <p>Configure pricing tiers (Starter, Growth, Enterprise) and define feature limits per plan.</p>
-                    <img src="assets/tms/screenshots/plans.png" alt="Plans List" class="screenshot"
-                        style="margin-top: 15px; border-radius: 8px;">
-                </div>
-            </div>
-        </div>
-
-        <div class="guide-section"
-            style="text-align: center; padding: 80px; background: #0f172a; color: white; border: none;">
-            <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Documentation Complete</h2>
-            <p style="opacity: 0.8; font-size: 1.1rem;">This manual is generated directly from the live production
-                environment.</p>
-            <div
-                style="margin-top: 40px; padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.9rem; opacity: 0.6;">
-                &copy; 2026 School Management System | Professional SaaS Platform
+            <div class="module-item">
+                <i class="bi bi-palette-fill fs-3 text-primary mb-3 d-block"></i>
+                <strong>Landing Page</strong>
+                <p>A beautiful marketing front-end with dynamic theme switching for guests.</p>
             </div>
         </div>
     </div>
 
-</body>
+    <!-- SECTION: DASHBOARD -->
+    <div class="guide-section" id="dashboard">
+        <div class="badge badge-admin">Real-time Analytics</div>
+        <h2>2. Admin Dashboard</h2>
+        <p>The central hub for your workspace operations. Get an instant snapshot of your project delivery and financial metrics.</p>
+        
+        <div class="screenshot-container">
+            <img src="assets/tms/screenshots/dashboard.png" alt="Admin Dashboard" class="screenshot">
+        </div>
 
+        <h3>Key Features:</h3>
+        <ul class="step-list">
+            <li><strong>Live Stat Cards:</strong> Monitor active clients, team registries, and sprint progress in real-time.</li>
+            <li><strong>Theme Switching:</strong> Access the palette icon in the top bar to change themes or toggle Dark Mode instantly.</li>
+            <li><strong>Quick Search:</strong> Find any client record or team directory listing directly from the global search bar.</li>
+        </ul>
+    </div>
+
+    <!-- SECTION: PATIENTS -->
+    <div class="guide-section" id="students">
+        <div class="badge badge-admin">Operations</div>
+        <h2>3. Client Management</h2>
+        <p>Comprehensive client lifecycle management from registration to active project engagements and billing.</p>
+        
+        <div class="screenshot-container">
+            <img src="assets/tms/screenshots/clients.png" alt="Client List" class="screenshot">
+        </div>
+
+        <div class="module-grid">
+            <div class="module-item">
+                <strong>Registration</strong>
+                <p>Onboard new clients with full details (client tier, requirements, contact info) and automatically generate Client IDs.</p>
+            </div>
+            <div class="module-item">
+                <strong>Profiles & Timelines</strong>
+                <p>Track history timelines, files, team chats, and allocated project teams.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION: PROJECTS -->
+    <div class="guide-section" id="projects">
+        <div class="badge badge-admin">Work Delivery</div>
+        <h2>4. Projects & Tasks</h2>
+        <p>Define client projects, organize teams, and monitor associated project tasks, schedules, and deliverables.</p>
+        
+        <div class="screenshot-container">
+            <img src="assets/tms/screenshots/projects.png" alt="Projects Directory" class="screenshot">
+        </div>
+
+        <p>Each project card outlines the assigned team count, status, and active task count. Click on any project card to view the detailed project breakdown and the comprehensive tasks checklist.</p>
+
+        <div class="screenshot-container">
+            <img src="assets/tms/screenshots/project_show.png" alt="Project Details & Tasks" class="screenshot">
+        </div>
+    </div>
+
+    <!-- SECTION: DOCTORS -->
+    <div class="guide-section" id="teachers">
+        <div class="badge badge-admin">People & HRM</div>
+        <h2>5. Team Directory</h2>
+        <p>Manage your software engineers and designers, configure task schedules, and assign project roles.</p>
+        
+        <div class="screenshot-container">
+            <img src="assets/tms/screenshots/teams.png" alt="Team List" class="screenshot">
+        </div>
+    </div>
+
+    <!-- SECTION: TIME TRACKING / SPRINT -->
+    <div class="guide-section" id="attendance">
+        <div class="badge badge-admin">Daily Operations</div>
+        <h2>6. Sprint Tracking & Progress Module</h2>
+        <p>Log sprint progress metrics (work intensity, logged hours, overtime, work progress %) and manage active agile sprints.</p>
+        
+        <div class="screenshot-container">
+            <img src="assets/tms/screenshots/attendance.png" alt="Sprint Triage Log" class="screenshot">
+        </div>
+
+        <p>Enter intensity and progress values for allocated project tasks or manage active agile sprints. Check board availability statuses (Backlog, In Progress, Review, Done) and coordinate sprint release lifecycles.</p>
+    </div>
+
+    <!-- SECTION: BILLING & INVOICES -->
+    <div class="guide-section" id="fees">
+        <div class="badge badge-admin">Invoice & Finance</div>
+        <h2>7. Invoice & Billing</h2>
+        <p>Transparent fee calculation, service rate integration, subscription claims, and automated invoice PDF downloads.</p>
+        
+        <div class="screenshot-container">
+            <img src="assets/tms/screenshots/fees.png" alt="Invoices & Invoice Panel" class="screenshot">
+        </div>
+    </div>
+
+    <!-- SECTION: SUPER ADMIN -->
+    <div class="guide-section" id="superadmin">
+        <div class="badge badge-super">System Administration</div>
+        <h2>8. Super Admin Control Panel</h2>
+        <p>The global command center for the entire SaaS platform. Onboard multi-tenant companies and customize subscription tiers.</p>
+        
+        <div class="screenshot-container">
+            <img src="assets/tms/screenshots/super_admin_dashboard.png" alt="Super Admin Dashboard" class="screenshot">
+        </div>
+
+        <h3>Tenant & Subscription Management:</h3>
+        <div class="module-grid">
+            <div class="module-item">
+                <strong>Company Tenants</strong>
+                <p>Onboard companies, assign custom domains, and toggle active/suspended statuses under global database isolation.</p>
+                <img src="assets/tms/screenshots/tenants.png" alt="Tenants List" class="screenshot" style="margin-top: 15px; border-radius: 8px;">
+            </div>
+            <div class="module-item">
+                <strong>SaaS Plans</strong>
+                <p>Configure subscription plans (Starter, Growth, Enterprise) and define maximum limits per tenant.</p>
+                <img src="assets/tms/screenshots/plans.png" alt="Plans List" class="screenshot" style="margin-top: 15px; border-radius: 8px;">
+            </div>
+        </div>
+    </div>
+
+    <div class="guide-section" style="text-align: center; padding: 80px; background: #0f172a; color: white; border: none;">
+        <h2 style="font-size: 2.5rem; margin-bottom: 20px; color: white;">Documentation Complete</h2>
+        <p style="opacity: 0.8; font-size: 1.1rem;">This manual is generated directly from the live production environment.</p>
+        <div style="margin-top: 40px; padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.9rem; opacity: 0.6;">
+            &copy; 2026 SprintDesk | Professional Project Management SaaS
+        </div>
+    </div>
+</div>
+
+</body>
 </html>
