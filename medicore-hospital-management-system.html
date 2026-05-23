@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Complete User Manual | School Management System</title>
+    <title>Complete User Manual | Hospital Management System</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -22,10 +22,6 @@
             color: var(--text);
             margin: 0;
             line-height: 1.6;
-        }
-
-        a {
-            text-decoration: none;
         }
 
         .container {
@@ -164,10 +160,10 @@
         <div class="toc-links">
             <a href="#login">Authentication</a>
             <a href="#dashboard">Dashboard</a>
-            <a href="#students">Students</a>
-            <a href="#teachers">Teachers</a>
-            <a href="#attendance">Attendance</a>
-            <a href="#fees">Fees</a>
+            <a href="#students">Patients</a>
+            <a href="#teachers">Doctors</a>
+            <a href="#attendance">Clinical OPD/IPD</a>
+            <a href="#fees">Billing & Invoices</a>
             <a href="#superadmin">Super Admin</a>
         </div>
     </nav>
@@ -176,7 +172,7 @@
     <div class="guide-section" id="login">
         <div class="badge badge-admin">Access Control</div>
         <h2>1. Accessing the Platform</h2>
-        <p>Your portal to school management. Log in with your unique credentials to access the modules assigned to your role.</p>
+        <p>Your portal to hospital management. Log in with your unique credentials to access the modules assigned to your clinical or administrative role.</p>
         
         <div class="screenshot-container">
             <img src="assets/hms/screenshots/login.png" alt="Login Page" class="screenshot">
@@ -186,7 +182,7 @@
             <div class="module-item">
                 <i class="bi bi-shield-lock-fill fs-3 text-primary mb-3 d-block"></i>
                 <strong>Secure Login</strong>
-                <p>Standard encrypted authentication for all users (Admins, Teachers, Students).</p>
+                <p>Standard encrypted authentication for all users (Admins, Doctors, Nurses, Pharmacists, Patients).</p>
             </div>
             <div class="module-item">
                 <i class="bi bi-palette-fill fs-3 text-primary mb-3 d-block"></i>
@@ -200,7 +196,7 @@
     <div class="guide-section" id="dashboard">
         <div class="badge badge-admin">Real-time Analytics</div>
         <h2>2. Admin Dashboard</h2>
-        <p>The central hub for your school operations. Get an instant snapshot of your institution's health.</p>
+        <p>The central hub for your hospital operations. Get an instant snapshot of your clinical and financial health.</p>
         
         <div class="screenshot-container">
             <img src="assets/hms/screenshots/dashboard.png" alt="Admin Dashboard" class="screenshot">
@@ -208,66 +204,66 @@
 
         <h3>Key Features:</h3>
         <ul class="step-list">
-            <li><strong>Live Stat Cards:</strong> Monitor student, teacher, and class counts in real-time.</li>
+            <li><strong>Live Stat Cards:</strong> Monitor active inpatients, doctor registries, and ward capacities in real-time.</li>
             <li><strong>Theme Switching:</strong> Access the palette icon in the top bar to change themes or toggle Dark Mode instantly.</li>
-            <li><strong>Quick Search:</strong> Find any student or teacher record directly from the global search.</li>
+            <li><strong>Quick Search:</strong> Find any patient UHID record or physician listing directly from the global search bar.</li>
         </ul>
     </div>
 
-    <!-- SECTION: STUDENTS -->
+    <!-- SECTION: PATIENTS -->
     <div class="guide-section" id="students">
         <div class="badge badge-admin">Academics</div>
-        <h2>3. Student Management</h2>
-        <p>Comprehensive student lifecycle management from admission to graduation.</p>
+        <h2>3. Patient Management</h2>
+        <p>Comprehensive patient lifecycle management from UHID registration to consultation history and discharge.</p>
         
         <div class="screenshot-container">
-            <img src="assets/hms/screenshots/students.png" alt="Student List" class="screenshot">
+            <img src="assets/hms/screenshots/patients.png" alt="Patient List" class="screenshot">
         </div>
 
         <div class="module-grid">
             <div class="module-item">
-                <strong>Admissions</strong>
-                <p>Register new students with full profile details, parent info, and document uploads.</p>
+                <strong>Registration</strong>
+                <p>Onboard new patients with full details (blood group, allergies, contact info) and automatically generate UHIDs.</p>
             </div>
             <div class="module-item">
-                <strong>Promotions</strong>
-                <p>Bulk promote students to the next class at the end of the term with automated verification.</p>
+                <strong>Clinical Profiles</strong>
+                <p>Track history timelines, prescriptions, laboratory test files, and consultant doctor details.</p>
             </div>
         </div>
     </div>
 
-    <!-- SECTION: TEACHERS -->
+    <!-- SECTION: DOCTORS -->
     <div class="guide-section" id="teachers">
         <div class="badge badge-admin">Academics</div>
-        <h2>4. Teacher Directory</h2>
-        <p>Manage your faculty, assign class teachers, and track staff attendance.</p>
+        <h2>4. Doctor Directory</h2>
+        <p>Manage your consulting medical faculty, configure appointment time slots, and assign clinical specialties.</p>
         
         <div class="screenshot-container">
-            <img src="assets/hms/screenshots/teachers.png" alt="Teacher List" class="screenshot">
+            <img src="assets/hms/screenshots/doctors.png" alt="Doctor List" class="screenshot">
         </div>
     </div>
 
-    <!-- SECTION: ATTENDANCE -->
+    <!-- SECTION: CLINICAL OPD/IPD -->
     <div class="guide-section" id="attendance">
         <div class="badge badge-admin">Daily Operations</div>
-        <h2>5. Digital Attendance</h2>
-        <p>Quick, mobile-friendly attendance marking for every class and section.</p>
+        <h2>5. Clinical & OPD/IPD Module</h2>
+        <p>Log patient triage vitals (blood pressure, temperature, weight) and manage inpatient ward bed allocations.</p>
         
         <div class="screenshot-container">
-            <img src="assets/hms/screenshots/attendance.png" alt="Attendance Marking" class="screenshot">
+            <img src="assets/hms/screenshots/attendance.png" alt="Clinical Vitals Triage Log" class="screenshot">
         </div>
 
-        <p>Select your class, section, and date. Mark students as Present, Absent, or Late with a single tap. The system automatically notifies parents of absences.</p>
+        <p>Enter diagnostic values for consulting outpatients or manage active inpatient admissions. Check bed availability statuses (ICU, Deluxe, General Ward) and coordinate discharge lifecycles.</p>
     </div>
 
-    <!-- SECTION: FEES -->
+    <!-- SECTION: BILLING & INVOICES -->
     <div class="guide-section" id="fees">
         <div class="badge badge-admin">Billing & Finance</div>
-        <h2>6. Fee Management</h2>
-        <p>Transparent and efficient fee collection with automated receipt generation.</p>
+        <h2>6. Billing & Invoices</h2>
+        <p>Transparent fee calculation, pharmacy medicine bills integration, insurance claims, and automated invoice PDF downloads.</p>
         
         <div class="screenshot-container">
-            <img src="assets/hms/screenshots/fees.png" alt="Fees Management" class="screenshot">
+            <img src="assets/hms/screenshots/fees.png" alt="Invoices & Billing Panel" class="screenshot">
         </div>
     </div>
 
@@ -275,7 +271,7 @@
     <div class="guide-section" id="superadmin">
         <div class="badge badge-super">System Administration</div>
         <h2>7. Super Admin Control Panel</h2>
-        <p>The global command center for the entire SaaS platform. Manage multiple schools and subscription plans.</p>
+        <p>The global command center for the entire SaaS platform. Onboard multi-tenant hospitals and customize subscription tiers.</p>
         
         <div class="screenshot-container">
             <img src="assets/hms/screenshots/super_admin_dashboard.png" alt="Super Admin Dashboard" class="screenshot">
@@ -284,23 +280,23 @@
         <h3>Tenant & Subscription Management:</h3>
         <div class="module-grid">
             <div class="module-item">
-                <strong>School Tenants</strong>
-                <p>Monitor all registered schools, their status (Active/Suspended), and subscription health.</p>
+                <strong>Hospital Tenants</strong>
+                <p>Onboard hospitals, assign custom domains, and toggle active/suspended statuses under global database isolation.</p>
                 <img src="assets/hms/screenshots/tenants.png" alt="Tenants List" class="screenshot" style="margin-top: 15px; border-radius: 8px;">
             </div>
             <div class="module-item">
                 <strong>SaaS Plans</strong>
-                <p>Configure pricing tiers (Starter, Growth, Enterprise) and define feature limits per plan.</p>
+                <p>Configure subscription plans (Starter, Growth, Enterprise) and define maximum patient limits per tenant.</p>
                 <img src="assets/hms/screenshots/plans.png" alt="Plans List" class="screenshot" style="margin-top: 15px; border-radius: 8px;">
             </div>
         </div>
     </div>
 
     <div class="guide-section" style="text-align: center; padding: 80px; background: #0f172a; color: white; border: none;">
-        <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Documentation Complete</h2>
+        <h2 style="font-size: 2.5rem; margin-bottom: 20px; color: white;">Documentation Complete</h2>
         <p style="opacity: 0.8; font-size: 1.1rem;">This manual is generated directly from the live production environment.</p>
         <div style="margin-top: 40px; padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.9rem; opacity: 0.6;">
-            &copy; 2026 School Management System | Professional SaaS Platform
+            &copy; 2026 Hospital Management System | Professional SaaS Platform
         </div>
     </div>
 </div>
