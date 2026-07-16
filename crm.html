@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete User Manual | SaaS CRM — Customer Relationship Management System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #e8ff47;
+            --primary-dark: #0f172a;
+            --bg: #f8fafc;
+            --card: #ffffff;
+            --text: #0f172a;
+            --muted: #64748b;
+            --border: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0f172a 0%, #a855f7 100%);
+            color: #ffffff;
+            padding: 100px 0;
+            text-align: center;
+            border-radius: 0 0 50px 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 60px;
+        }
+
+        header h1 {
+            color: #ffffff;
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 1.2rem;
+            margin: 0;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Outfit', sans-serif;
+            margin-top: 0;
+        }
+
+        .guide-section {
+            background: var(--card);
+            border-radius: 30px;
+            padding: 50px;
+            margin-bottom: 50px;
+            box-shadow: 0 10px 40px rgba(15, 23, 42, 0.05);
+            border: 1px solid var(--border);
+        }
+
+        .screenshot-container {
+            background: #0f172a;
+            padding: 15px;
+            border-radius: 20px;
+            margin: 30px 0;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .screenshot {
+            width: 100%;
+            display: block;
+            border-radius: 12px;
+            max-width: 100%;
+        }
+
+        .screenshot-caption {
+            color: #94a3b8;
+            font-size: 0.85rem;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            margin-right: 10px;
+        }
+
+        .badge-admin { background: #dbeafe; color: #1e40af; }
+        .badge-hr { background: #fef3c7; color: #92400e; }
+        .badge-sales { background: #d1fae5; color: #065f46; }
+        .badge-tech { background: #f3e8ff; color: #6b21a8; }
+
+        .step-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .step-list li {
+            padding-left: 35px;
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        .step-list li::before {
+            content: "\F272";
+            font-family: "bootstrap-icons";
+            position: absolute;
+            left: 0;
+            color: #a855f7;
+            font-weight: bold;
+        }
+
+        nav.toc {
+            background: white;
+            padding: 25px;
+            border-radius: 20px;
+            border: 1px solid var(--border);
+            margin-bottom: 40px;
+            position: sticky;
+            top: 20px;
+            z-index: 100;
+        }
+
+        .toc h4 { margin: 0 0 15px; border-bottom: 2px solid #a855f7; display: inline-block; }
+        .toc-links { display: flex; flex-wrap: wrap; gap: 15px; }
+        .toc-links a { text-decoration: none; color: var(--muted); font-weight: 500; font-size: 0.9rem; }
+        .toc-links a:hover { color: #a855f7; }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.9rem;
+        }
+        th, td {
+            border: 1px solid var(--border);
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f8fafc;
+            color: var(--text);
+            font-weight: 600;
+        }
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        .endpoint-badge {
+            display: inline-block;
+            padding: 4px 8px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            border-radius: 6px;
+            text-transform: uppercase;
+        }
+        .badge-get { background: #ebf8ff; color: #2b6cb0; }
+        .badge-post { background: #f0fff4; color: #276749; }
+        .badge-put { background: #fffaf0; color: #dd6b20; }
+        .badge-delete { background: #fff5f5; color: #9b2c2c; }
+
+        @media print {
+            nav.toc { display: none; }
+            .guide-section { break-inside: avoid; }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>SaaS CRM — Customer Relationship Management System</h1>
+        <p>Complete User Manual & Administrative Guide</p>
+    </div>
+</header>
+
+<div class="container">
+    <nav class="toc">
+        <h4>Table of Contents</h4>
+        <div class="toc-links">
+            <a href="#saas-core">SaaS Platform Core</a>
+            <a href="#crm-masters">CRM Configuration</a>
+            <a href="#leads-management">Leads Management</a>
+            <a href="#contacts-accounts">Contacts & Accounts</a>
+            <a href="#deals-opportunities">Deals & Opportunities</a>
+            <a href="#activities-workflows">Activities & Workflows</a>
+            <a href="#api-directory">API Directory</a>
+        </div>
+    </nav>
+
+    <!-- SaaS Platform Core Section -->
+    <section class="guide-section" id="saas-core">
+        <h2>SaaS Platform Core</h2>
+        <p>Multi-tenant administrative framework providing robust organization, user provisioning, global roles, and secure billing plans gates.</p>
+        
+        <span class="badge badge-admin">Platform Admin</span>
+        <span class="badge badge-tech">Core Infrastructure</span>
+
+        <div class="screenshot-container">
+            <img class="screenshot" src="assets/crm/screenshots/login.png" alt="Login Gateway screen">
+            <div class="screenshot-caption">Figure 1.1: Tenant-Aware Secure Gateway Login Portal</div>
+        </div>
+
+        <h3>Tenant Provisioning & Isolation</h3>
+        <ul class="step-list">
+            <li><strong>Database Multi-Tenancy:</strong> Auto-scopes database rows via a dynamic <code>tenant_id</code> resolver middleware.</li>
+            <li><strong>Subscription Plans:</strong> Features tier limits (Starter, Growth, Enterprise) configured at the platform level.</li>
+            <li><strong>User Invitations:</strong> Invites employees with automated link verification and assignments.</li>
+            <li><strong>Audit Logs Tracker:</strong> Records admin activity trails for strict platform monitoring.</li>
+            <li><strong>System Preferences:</strong> Configure localization settings (timezones, locales, and currencies).</li>
+        </ul>
+
+        <div class="screenshot-container">
+            <img class="screenshot" src="assets/crm/screenshots/dashboard.png" alt="Admin Dashboard screen">
+            <div class="screenshot-caption">Figure 1.2: Tenant Admin Overview Dashboard Interface</div>
+        </div>
+    </section>
+
+    <!-- CRM Configuration Section -->
+    <section class="guide-section" id="crm-masters">
+        <h2>CRM Master Configurations</h2>
+        <p>Manage system metadata, dynamic parameters, custom fields, and product lines from a unified administrative module.</p>
+
+        <span class="badge badge-admin">Admin Module</span>
+
+        <div class="screenshot-container">
+            <img class="screenshot" src="assets/crm/screenshots/module_builder.png" alt="Module Builder Console">
+            <div class="screenshot-caption">Figure 2.1: Dynamic Module Builder Setup Console</div>
+        </div>
+
+        <h3>CRM Metadata Settings</h3>
+        <ul class="step-list">
+            <li><strong>Custom Fields:</strong> Create metadata columns (dates, numbers, text) on contacts and leads.</li>
+            <li><strong>Lead Master:</strong> Configure lead source items and status list parameters.</li>
+            <li><strong>Sales Pipelines:</strong> Define sales stages with associated target probabilities.</li>
+            <li><strong>Catalog Manager:</strong> Build global service lines and products with custom rates.</li>
+        </ul>
+    </section>
+
+    <!-- Leads Management Section -->
+    <section class="guide-section" id="leads-management">
+        <h2>Leads & Conversions</h2>
+        <p>Capture, route, qualify, and convert leads into active customer directories and pipelines.</p>
+
+        <span class="badge badge-sales">Sales Module</span>
+
+        <div class="screenshot-container">
+            <img class="screenshot" src="assets/crm/screenshots/leads.png" alt="Leads List Interface">
+            <div class="screenshot-caption">Figure 3.1: Leads Pipeline Dashboard Directory</div>
+        </div>
+
+        <h3>Lead Lifecycle Steps</h3>
+        <ul class="step-list">
+            <li><strong>Lead Capture:</strong> Import leads from CSV files or capture via web integration forms.</li>
+            <li><strong>Assignment Rules:</strong> Route prospects to salespeople using round-robin rules.</li>
+            <li><strong>Prospect Scoring:</strong> AI scoring logic evaluates conversion possibilities.</li>
+            <li><strong>One-Click Conversion:</strong> Transition qualified leads into contacts and deals automatically.</li>
+        </ul>
+    </section>
+
+    <!-- Contacts & Accounts Section -->
+    <section class="guide-section" id="contacts-accounts">
+        <h2>Contacts & Accounts Directory</h2>
+        <p>Maintain corporate accounts and contact details securely with detailed timeline records.</p>
+
+        <span class="badge badge-sales">Sales Module</span>
+
+        <div class="screenshot-container">
+            <img class="screenshot" src="assets/crm/screenshots/contacts.png" alt="Contacts list Screen">
+            <div class="screenshot-caption">Figure 4.1: Centralized Customer Contacts Index Directory</div>
+        </div>
+
+        <h3>Contact Management features</h3>
+        <ul class="step-list">
+            <li><strong>Companies Scoping:</strong> Maintain detail profiles for client organizations.</li>
+            <li><strong>Account Mappings:</strong> Nest branches and subsidiaries within parent companies.</li>
+            <li><strong>Activity Timelines:</strong> Log notes, phone records, and file uploads directly inside profiles.</li>
+        </ul>
+    </section>
+
+    <!-- Deals & Opportunities Section -->
+    <section class="guide-section" id="deals-opportunities">
+        <h2>Deals & Pipeline Kanban</h2>
+        <p>Visually track active deals and predict sales cycles with Kanban boards.</p>
+
+        <span class="badge badge-sales">Sales Module</span>
+
+        <div class="screenshot-container">
+            <img class="screenshot" src="assets/crm/screenshots/deals.png" alt="Deals Kanban Board">
+            <div class="screenshot-caption">Figure 5.1: Interactive Opportunity Pipeline Kanban Board</div>
+        </div>
+
+        <h3>Deals Pipeline Features</h3>
+        <ul class="step-list">
+            <li><strong>Visual Kanban:</strong> Drag-and-drop deals across sales stages.</li>
+            <li><strong>Expected Revenue:</strong> Calculates pipeline forecast based on stage probabilities.</li>
+            <li><strong>Win/Loss Tracker:</strong> Record loss reasons to review team bottlenecks.</li>
+        </ul>
+    </section>
+
+    <!-- Activities & Workflows Section -->
+    <section class="guide-section" id="activities-workflows">
+        <h2>Activities & Workflow Automations</h2>
+        <p>Automate tasks and schedule activities (calls, meetings, calendar reminders) using workflow triggers.</p>
+
+        <span class="badge badge-hr">CRM Module</span>
+
+        <h3>Activity Coordination</h3>
+        <ul class="step-list">
+            <li><strong>Task Lists:</strong> Create, delegate, and track follow-up tasks.</li>
+            <li><strong>Reminders:</strong> Receive system alerts for calls, meetings, and calendar appointments.</li>
+            <li><strong>Workflows Triggering:</strong> Automatically update records, send alerts, or assign tasks.</li>
+            <li><strong>SLA Escalations:</strong> Auto-elevate pending items based on timeframe thresholds.</li>
+        </ul>
+    </section>
+
+    <!-- API Reference Section -->
+    <section class="guide-section" id="api-directory">
+        <h2>Restructured API Directory</h2>
+        <p>Full reference directory of endpoints now restructured under the <code>Http/Controllers/Api/</code> namespace.</p>
+
+        <span class="badge badge-tech">REST API Reference</span>
+
+        <h3>Lead Management Endpoints</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Method</th>
+                    <th>Endpoint Path</th>
+                    <th>Controller Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="endpoint-badge badge-get">GET</span></td>
+                    <td><code>/api/v1/leads</code></td>
+                    <td><code>Api\LeadApiController@index</code></td>
+                </tr>
+                <tr>
+                    <td><span class="endpoint-badge badge-post">POST</span></td>
+                    <td><code>/api/v1/leads</code></td>
+                    <td><code>Api\LeadApiController@store</code></td>
+                </tr>
+                <tr>
+                    <td><span class="endpoint-badge badge-get">GET</span></td>
+                    <td><code>/api/v1/leads/{lead}</code></td>
+                    <td><code>Api\LeadApiController@show</code></td>
+                </tr>
+                <tr>
+                    <td><span class="endpoint-badge badge-put">PUT</span></td>
+                    <td><code>/api/v1/leads/{lead}</code></td>
+                    <td><code>Api\LeadApiController@update</code></td>
+                </tr>
+                <tr>
+                    <td><span class="endpoint-badge badge-delete">DELETE</span></td>
+                    <td><code>/api/v1/leads/{lead}</code></td>
+                    <td><code>Api\LeadApiController@destroy</code></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Contact & Company Endpoints</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Method</th>
+                    <th>Endpoint Path</th>
+                    <th>Controller Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="endpoint-badge badge-get">GET</span></td>
+                    <td><code>/api/v1/contacts</code></td>
+                    <td><code>Api\ContactApiController@index</code></td>
+                </tr>
+                <tr>
+                    <td><span class="endpoint-badge badge-get">GET</span></td>
+                    <td><code>/api/v1/companies</code></td>
+                    <td><code>Api\CompanyApiController@index</code></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Opportunity & Deals Endpoints</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Method</th>
+                    <th>Endpoint Path</th>
+                    <th>Controller Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="endpoint-badge badge-get">GET</span></td>
+                    <td><code>/api/v1/deals</code></td>
+                    <td><code>Api\DealApiController@index</code></td>
+                </tr>
+                <tr>
+                    <td><span class="endpoint-badge badge-post">POST</span></td>
+                    <td><code>/api/v1/deals</code></td>
+                    <td><code>Api\DealApiController@store</code></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</div>
+
+</body>
+</html>
